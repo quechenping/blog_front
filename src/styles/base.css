@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  /* 以下组件的默认样式 */
+  input {
+    @apply rounded-sm shadow-sm py-2 px-3 border bg-inherit;
+    @apply hover:shadow-md;
+  }
+
+  input:focus {
+    @apply focus:outline-none;
+    border-color: var(--color-border-focus);
+  }
+
+  button {
+    @apply text-base font-medium px-5 py-2 text-black rounded-md border;
+    @apply hover:shadow-md;
+    @apply active:animation-btnFocus;
+  }
+
+  /* 定义常量颜色 */
+  :root {
+    --color-border: theme("colors.gray.400");
+    --color-border-focus: theme("colors.gray.500");
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+}
+
+@variants hover, focus {
+  @keyframes btnFocus {
+    from {
+      border-color: var(--color-border-focus);
+    }
+
+    to {
+      border-color: var(--color-border);
+    }
+  }
+
+  .animation-btnFocus {
+    animation: btnFocus 0.3s linear;
+  }
+}
+

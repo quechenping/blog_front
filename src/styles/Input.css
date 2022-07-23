@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components {
+  /* 只有底部border */
+  .input-border-b {
+    @apply w-full border-0 border-b shadow-none rounded-none hover:shadow-none !important;
+  }
+
+  /* 没有border和其他样式 */
+  .input-border-none {
+    @apply border-none shadow-none hover:shadow-none !important;
+  }
+}

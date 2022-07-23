@@ -1,0 +1,12 @@
+@tailwind components;
+
+@layer components {
+  /* 如下配置不写的话bytemd自己样式不生效 */
+  .custom-markdown-body .markdown-body {
+    @apply prose;
+  }
+
+  .custom-markdown-body .custom-markdown-body-edit .bytemd {
+    height: calc(100vh - 4rem);
+  }
+}

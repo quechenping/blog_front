@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components {
+  /* BlogDesc组件 */
+  .blog-desc-content {
+    @apply flex flex-col flex-grow p-4 space-y-4 text-base rounded md:p-8 shadow-md;
+    @apply hover:shadow-lg;
+  }
+
+  .blog-desc-content-title {
+    @apply flex justify-between;
+  }
+}
