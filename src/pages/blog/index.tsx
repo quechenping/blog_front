@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Section, BlogDesc } from "@/bussinsCPT";
+import { Section, BlogDesc } from "@/feature";
 import { Item } from "@/types/blogItem";
 
 const initList = [

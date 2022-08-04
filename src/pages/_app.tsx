@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { Layout } from "@/bussinsCPT";
+import { Layout } from "@/feature";
 import "@/styles/index.css";
 
 type CustomAppProps = {

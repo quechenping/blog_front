@@ -2,7 +2,7 @@
   "name": "next-blog",
   "version": "1.0.0",
   "description": "基于next框架、mongo数据库的博客",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "start": "next",
     "build": "next build",

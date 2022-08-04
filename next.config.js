@@ -10,7 +10,7 @@ module.exports = withBundleAnalyzer({
   },
   async rewrites() {
     return [
-      { source: "/blog/:slug", destination: `http://127.0.0.1:8000/:slug` },
+      { source: "/blog/:slug", destination: `${process.env.API_HOST}/:slug` },
     ];
   },
 });
