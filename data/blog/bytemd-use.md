@@ -158,7 +158,7 @@ ByteMD 使用 [remark](https://github.com/remarkjs/remark) 和 [rehype](https://
 
 因为bytemd底层用的是remark、rehype，因此查找rehype插件，这里用到的是[ `rehype-slug` ](https://github.com/rehypejs/rehype-slug)插件, 该插件能获取到所有标题标签并为其添加id
 
-**代码如下: **
+**代码如下:**
 
 ```ts
 import type { BytemdPlugin } from "bytemd";
